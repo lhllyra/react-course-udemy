@@ -1,8 +1,9 @@
 import ExpenseItem from "../ExpenseItem/ExpenseItem";
+import "./ExpenseList.css";
 
 function ExpenseList(props) {
   return (
-    <div>
+    <div className="expenses">
       {props.dataList.map((item) => {
         return (
           <ExpenseItem
